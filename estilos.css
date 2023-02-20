@@ -3,7 +3,6 @@ body {
     display: flex;
     justify-content: space-evenly;
     align-items: center;
-
 }
 
 /*Contenedor Flex-box para cuchara*/
@@ -64,6 +63,8 @@ body {
 .ramen{
     display: flex;
     align-content: center;
+    flex-direction: column;
+    transform: translate(0px, 50px);
 }
 
 .plato{
@@ -147,7 +148,7 @@ body {
 
 .huevo{
     display: flex;
-    transform: translate(-170px, 80px) rotate(-25deg);
+    transform: translate(20px, -100px) rotate(-25deg);
     z-index: 5;
     content:"";
     width: 50px;
@@ -166,4 +167,28 @@ body {
     border-radius: 50%;
     background: rgb(253, 253, 46);
     box-shadow: inset 2px -2px rgb(231, 118, 62);
+}
+
+.algas{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: row;
+    z-index: 10;
+    transform: translate(20px, -200px);
+}
+
+.algas > *{
+    width: 30px;
+    height: 35px;
+    background: rgb(11, 130, 11);
+    opacity: 0.7;
+}
+
+.alga:nth-child(1){
+    transform: translate(40px) rotate(45deg);
+}
+
+.alga:nth-child(2){
+    transform: translate(-25px) rotate(-15deg);
 }
